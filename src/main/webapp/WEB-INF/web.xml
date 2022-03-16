@@ -9,10 +9,18 @@
         <servlet-name>week2_Q1</servlet-name> <!--any name-->
         <servlet-class>com.LiZixu.week2.homework.HelloWorldServlet</servlet-class> <!--name of servlet class-->
     </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>LiZixu.week3.RegisterServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>week2_Q1</servlet-name> <!--any name-->
         <url-pattern>/hello</url-pattern> <!--url must start with / -->
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name> <!--any name-->
+        <url-pattern>/register</url-pattern> <!--url must start with / -->
     </servlet-mapping>
         <!-- /hello==com.LiZixu.week2.homework.HelloWorldServlet -->
 
