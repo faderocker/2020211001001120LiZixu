@@ -74,26 +74,26 @@ public class RegisterServlet extends HttpServlet {
         //selcet info from usertable
         int r1 = 0;
         String r2 = null,r3=null,r4=null,r5=null,r6=null;
-        try {
+        try{
             Statement stmt = con.createStatement();
             String sql1 = "select id from usertable ";
             ResultSet rs1 = stmt.executeQuery(sql1);
-            r1=rs1.getInt("id");
+            while(rs1.next()){ r1=rs1.getInt("id"); }
             String sql2 = "select username from usertable ";
             ResultSet rs2 = stmt.executeQuery(sql2);
-            r2=rs2.getString("username");
+            while(rs2.next()){ r2=rs2.getString("username"); }
             String sql3 = "select password from usertable ";
             ResultSet rs3 = stmt.executeQuery(sql3);
-            r3=rs3.getString("password");
+            while(rs3.next()){r3=rs3.getString("password");}
             String sql4 = "select email from usertable ";
             ResultSet rs4 = stmt.executeQuery(sql4);
-            r4=rs4.getString("email");
+            while(rs4.next()){r4=rs4.getString("email");}
             String sql5 = "select gender from usertable ";
             ResultSet rs5 = stmt.executeQuery(sql5);
-            r5=rs5.getString("gender");
+            while(rs5.next()){r5=rs5.getString("gender");}
             String sql6 = "select birthdate from usertable ";
             ResultSet rs6 = stmt.executeQuery(sql6);
-            r6=rs6.getString("birthdate");
+            while(rs6.next()){r6=rs6.getString("birthdate");}
             stmt.close();
             con.close();
         } catch (SQLException ex) {
@@ -125,4 +125,6 @@ public class RegisterServlet extends HttpServlet {
 
 
     }
+
+
 }
