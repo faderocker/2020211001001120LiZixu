@@ -5,23 +5,91 @@
          version="4.0">
 
     <!-- add code about new servlet-->
+    <!--<servlet>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <servlet-class>LiZixu.week3.LifeCycleServlet</servlet-class>
+    </servlet>-->
     <servlet>
         <servlet-name>week2_Q1</servlet-name> <!--any name-->
         <servlet-class>com.LiZixu.week2.homework.HelloWorldServlet</servlet-class> <!--name of servlet class-->
     </servlet>
-    <servlet>
+   <!-- <servlet>
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>LiZixu.week3.RegisterServlet</servlet-class>
+    </servlet>-->
+    <!--<servlet>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <servlet-class>com.LiZixu.week4.ConfigDemoServlet</servlet-class>
+    </servlet>-->
+    <!--
+    <servlet>
+        <servlet-name>JDBCServlet</servlet-name>
+        <servlet-class>com.LiZixu.week4.JDBCServlet</servlet-class>
+        <init-param>
+            <param-name>driver</param-name>
+            <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+        </init-param>
+        <init-param>
+            <param-name>url</param-name>
+            <param-value>jdbc:sqlserver://localhost:1433;database=userdb;encrypt=false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>lizixu01</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>123456</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
     </servlet>
+    -->
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:sqlserver://localhost:1433;database=userdb;encrypt=false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>lizixu01</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>123456</param-value>
+    </context-param>
 
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>LiZixu</param-value>
+    </context-param>
+    <context-param>
+        <param-name>studentId</param-name>
+        <param-value>2020211001001120</param-value>
+    </context-param>
+    
     <servlet-mapping>
         <servlet-name>week2_Q1</servlet-name> <!--any name-->
         <url-pattern>/hello</url-pattern> <!--url must start with / -->
     </servlet-mapping>
+    <!--<servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name> &lt;!&ndash;any name&ndash;&gt;
+        <url-pattern>/register</url-pattern> &lt;!&ndash;url must start with / &ndash;&gt;
+    </servlet-mapping>-->
+  <!--  <servlet-mapping>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>-->
+    <!--<servlet-mapping>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>-->
+    <!--
     <servlet-mapping>
-        <servlet-name>RegisterServlet</servlet-name> <!--any name-->
-        <url-pattern>/register</url-pattern> <!--url must start with / -->
+        <servlet-name>JDBCServlet</servlet-name>
+        <url-pattern>/jdbc</url-pattern>
     </servlet-mapping>
-        <!-- /hello==com.LiZixu.week2.homework.HelloWorldServlet -->
-
+    -->
 </web-app>
