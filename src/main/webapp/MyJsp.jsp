@@ -19,7 +19,7 @@
 </head>
 <body>
 
-my JSP page.
+My JSP page.
 
 
 </body>

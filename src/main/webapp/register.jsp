@@ -16,7 +16,7 @@ New User Registration!
     Gender<input type="radio" name="gender" value="male" checked>Male
           <input type="radio" name="gender" value="female">Female<br/>
     <input type="text" name="birthdate" placeholder="Data of Birth(yyyy-mm-dd)"><br/>
-    <input style="background-color: #ffc000; color: #FFFFFF" type="submit" value="Register" >
+    <input style="background-color: #ffc000; color: #FFFFFF" type="submit" value="Register"  >
 </form>
 
 
