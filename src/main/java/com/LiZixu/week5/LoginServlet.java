@@ -59,7 +59,7 @@ public class LoginServlet extends HttpServlet {
         if(r1 != null){
             out.println("Login Success!!!");
             out.println("<br>");
-            out.println("Welcome,"+r1);
+            out.println("Welcome,"+r1+".");
         }
         else
             out.println("UserName or Password Error!");

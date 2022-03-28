@@ -21,7 +21,7 @@
                             padding:0px;
                             margin:0px;" valign="bottom">
 
-            <img src="logo.jpg" align="left">
+            <img src="logo.jpg" align="left" >
         </td>
     </tr>
     <tr>
