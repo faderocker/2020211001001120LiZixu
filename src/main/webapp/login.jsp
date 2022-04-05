@@ -13,6 +13,11 @@
 <body>
     <h1>Login</h1>
     <br>
+<%
+if(!(request.getAttribute("message")==null)){
+    out.println(request.getAttribute("message"));
+}
+%>
     <form method="post" action="login">
     UserName:<input name="username" type="text"><br>
     Password:<input name="password" type="text"><br>
